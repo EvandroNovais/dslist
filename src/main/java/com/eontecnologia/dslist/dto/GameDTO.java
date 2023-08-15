@@ -24,6 +24,7 @@ public class GameDTO {
 	
 	public GameDTO(Game game) {
 		//Copies properties from one entity to another, in this case from Game to GameDTO
+		//If you use BeanUtils, it is necessary to include get and set from all properties.
 		BeanUtils.copyProperties(game, this);
 	}
 
